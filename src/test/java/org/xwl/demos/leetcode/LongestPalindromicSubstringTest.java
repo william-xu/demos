@@ -23,7 +23,7 @@ public class LongestPalindromicSubstringTest extends TestCase{
     
     public void testCust() {
         String s = "abcdefghijak";
-        String target = "b";
+        String target = "a";
         assertEquals(LongestPalindromicSubstring.getLongestPalindrome(s),target);       
     }
 
@@ -62,7 +62,7 @@ public class LongestPalindromicSubstringTest extends TestCase{
     
     public void testUnique() {
         String s = "abcdefghijk";
-        assertEquals(LongestPalindromicSubstring.getLongestPalindrome(s),"");
+        assertEquals(LongestPalindromicSubstring.getLongestPalindrome(s),"a");
     }
     
     public void testEvenLen() {

@@ -105,7 +105,6 @@ public class LongestPalindromicSubstring {
         int tmp = 0;        
         char[] sc = s.toCharArray();
         String longest = "";
-        System.out.println("中轴字符：：：" + sc[m0]);
         while(!lreach || !rreach) {
             tmp = m0;//临时变量保存轴起始
             while(m0 > 0 && sc[m0] == sc[m0-1])  m0--;              //m0向左推进
@@ -116,9 +115,6 @@ public class LongestPalindromicSubstring {
             }
             //如果比较完首尾各自等于开始和结束索引，那么说明是完整的回文，直接返回
             if(m0 == 0 && m1 == sc.length-1) return s;
-            
-            System.out.println("旧的longest::" + longest);
-            System.out.println("当前回文：：" + s.substring(m0,m1+1));
             if(longest.length()<(m1+1-m0)) {
                 longest = s.substring(m0,m1+1);
             }
@@ -134,7 +130,8 @@ public class LongestPalindromicSubstring {
                 rreach = true;
             }
         }
-        return longest;
+        //如果最长回文长度为1（说明给定字符串没有重复出现）则返回第一个字母
+        return longest.length() == 1 ? s.substring(0,1) : longest;
     }    
     
 }
