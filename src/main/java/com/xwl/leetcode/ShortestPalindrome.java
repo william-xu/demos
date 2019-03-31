@@ -26,12 +26,12 @@ public class ShortestPalindrome {
 	    //从尾到头跟开始元素逐个比较，例如对于： abcdefgabc 从后面往前遍历，从第一个元素起往后遍历，当遍历到 c->b->a 时，跟第一个元素相等，匹配个数+1
 		//再继续从(abcdefg)中跟 开头的第二个元素b进行比较看有无相等，直到结束。 如果是完整的回文，那么两两匹配个数会等于回文长度,
 	    //由于题目是要在前面补充，那么说明缺少的都是前面部分，假设当前回文结构 ABACAD（ABAABACAD）,==> 对于子回文结构ABA（ABAABA），至少会有n个两两匹配（n=子回文长度)
-		//，即（A=A,B=B,A=A)/(A=A,B=B,A=A,A=A,B=B,A=A)，当不是不是完整的回文时，两两匹配个数即子回文的最大长度，剩余的则是需要补充的				
+		//，即（A=A,B=B,A=A)/(A=A,B=B,A=A,A=A,B=B,A=A)，当不是完整的回文时，两两匹配个数即子回文的最大长度，剩余的则是需要补充的				
 		int match = 0;
 	    for (int i = s.length() - 1; i >= 0; i--) {
 	        if (s.charAt(i) == s.charAt(match)) {
 	        	match++;
-	        }	        
+	        }
 	    }
 	    //全部是唯一的字符
 	    if(match == 1) return new StringBuffer(s.substring(match)).reverse().append(s).toString();
@@ -44,6 +44,13 @@ public class ShortestPalindrome {
 	}
 	
 	//思路：找到中心轴字符串，m0和m1用来标识轴字符串的起始和结束，并且从中部开始假设为轴
+	/**
+	 * 如果直接使用操作s字符串，不使用sc数组的话，会明显慢很多
+	 *  Runtime: 2 ms, faster than 88.25% of Java online submissions for Shortest Palindrome.
+        Memory Usage: 35 MB, less than 78.57% of Java online submissions for Shortest Palindrome.
+	 * @param s
+	 * @return
+	 */
     public static String shortestPalindrome_v1(String s) {
 		if (s.length() <= 1) return s;
 		if (s.length() == 2) return s.charAt(0) == s.charAt(1) ? s : s.charAt(1) + s;
@@ -66,7 +73,12 @@ public class ShortestPalindrome {
 				m0=tmp-1;m1=m0;
 			}
 		}
-    	return new StringBuilder(s.substring(m1+1)).reverse().append(s).toString();
+        StringBuilder sb = new StringBuilder(""); 
+        for (int i = sc.length - 1; i > m1; i--) {
+            sb.append(sc[i]);
+        }
+        String p =sb.append(s).toString();
+        return p;
     }
     
 }
