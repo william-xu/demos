@@ -1,4 +1,4 @@
-package com.xwl.leetcode;
+package org.xwl.demo.leetcode;
 
 /**
  * Given two integers n and k, you need to construct a list which contains n different positive integers ranging from 1 to n and obeys the following requirement: 

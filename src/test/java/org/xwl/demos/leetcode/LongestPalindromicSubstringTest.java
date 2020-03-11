@@ -1,6 +1,6 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.LongestPalindromicSubstring;
+import org.xwl.demo.leetcode.LongestPalindromicSubstring;
 
 import junit.framework.TestCase;
 

@@ -1,6 +1,6 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.TwoSum;
+import org.xwl.demo.leetcode.TwoSum;
 
 import junit.framework.TestCase;
 

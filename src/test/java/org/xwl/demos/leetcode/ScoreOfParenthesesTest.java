@@ -1,6 +1,6 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.ScoreOfParentheses;
+import org.xwl.demo.leetcode.ScoreOfParentheses;
 
 import junit.framework.TestCase;
 

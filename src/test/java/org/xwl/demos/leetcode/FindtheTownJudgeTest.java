@@ -1,6 +1,6 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.FindtheTownJudge;
+import org.xwl.demo.leetcode.FindtheTownJudge;
 
 import junit.framework.TestCase;
 

@@ -1,4 +1,4 @@
-package com.xwl.leetcode;
+package org.xwl.demo.leetcode;
 
 public class ListNode {
 	public int val;

@@ -1,6 +1,6 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.MatrixOf01;
+import org.xwl.demo.leetcode.MatrixOf01;
 
 import junit.framework.TestCase;
 

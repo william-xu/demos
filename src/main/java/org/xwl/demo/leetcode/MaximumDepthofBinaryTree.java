@@ -1,4 +1,4 @@
-package com.xwl.leetcode;
+package org.xwl.demo.leetcode;
 
 /**
  * 104. Maximum Depth of Binary Tree

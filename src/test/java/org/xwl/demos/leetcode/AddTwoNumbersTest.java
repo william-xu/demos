@@ -1,7 +1,7 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.AddTwoNumbers;
-import com.xwl.leetcode.ListNode;
+import org.xwl.demo.leetcode.AddTwoNumbers;
+import org.xwl.demo.leetcode.ListNode;
 
 import junit.framework.TestCase;
 

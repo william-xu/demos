@@ -1,7 +1,7 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.BinaryTreeZigzagLevelOrderTraversal;
-import com.xwl.leetcode.TreeNode;
+import org.xwl.demo.leetcode.BinaryTreeZigzagLevelOrderTraversal;
+import org.xwl.demo.leetcode.TreeNode;
 
 import junit.framework.TestCase;
 

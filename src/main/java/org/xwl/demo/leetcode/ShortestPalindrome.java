@@ -1,4 +1,4 @@
-package com.xwl.leetcode;
+package org.xwl.demo.leetcode;
 
 /**
  * Given a string s, you are allowed to convert it to a palindrome by adding characters in front of it. 

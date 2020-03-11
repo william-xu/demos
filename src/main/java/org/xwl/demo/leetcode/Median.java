@@ -1,4 +1,4 @@
-package com.xwl.leetcode;
+package org.xwl.demo.leetcode;
 
 /**
  * 	There are two sorted arrays nums1 and nums2 of size m and n respectively.

@@ -1,7 +1,7 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.BinaryTreeLevelOrderTraversal;
-import com.xwl.leetcode.TreeNode;
+import org.xwl.demo.leetcode.BinaryTreeLevelOrderTraversal;
+import org.xwl.demo.leetcode.TreeNode;
 
 import junit.framework.TestCase;
 

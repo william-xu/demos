@@ -1,7 +1,7 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.SymmetricTree;
-import com.xwl.leetcode.TreeNode;
+import org.xwl.demo.leetcode.SymmetricTree;
+import org.xwl.demo.leetcode.TreeNode;
 
 import junit.framework.TestCase;
 

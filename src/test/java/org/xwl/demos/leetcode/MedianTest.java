@@ -1,6 +1,6 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.Median;
+import org.xwl.demo.leetcode.Median;
 
 import junit.framework.TestCase;
 

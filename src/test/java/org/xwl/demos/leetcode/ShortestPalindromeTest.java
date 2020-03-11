@@ -1,6 +1,6 @@
 package org.xwl.demos.leetcode;
 
-import com.xwl.leetcode.ShortestPalindrome;
+import org.xwl.demo.leetcode.ShortestPalindrome;
 
 import junit.framework.TestCase;
 
