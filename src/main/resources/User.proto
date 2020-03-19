@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "org.xwl.demo.serialize";
+option java_outer_classname = "UserProtoBuf";
+
+message User {
+  int64 id = 1;
+  string userId = 2;
+  string userName = 3;
+  string password = 4;
+}
